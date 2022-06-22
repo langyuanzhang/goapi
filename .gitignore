@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+.vscode
+
+# 日志
+logs/
+
+# 配置文件
+comm/config/server.conf
