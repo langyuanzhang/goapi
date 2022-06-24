@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"github.com/gin-contrib/pprof"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -20,6 +21,8 @@ func Include(opts ...Option) {
 // Init 初始化
 func Init() *gin.Engine {
 	r := gin.Default()
+	// 性能统计，执行 go tool pprof -http=:8000 http://127.0.0.1:8080/debug/pprof/profile
+	pprof.Register(r)
 	r.Use(middleware.LogMiddleWare)
 
 	// 路由
