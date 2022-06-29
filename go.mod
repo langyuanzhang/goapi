@@ -1,8 +1,9 @@
 module goapi
 
-go 1.17
+go 1.18
 
 require (
+	github.com/gin-contrib/pprof v1.3.0
 	github.com/gin-gonic/gin v1.7.6
 	github.com/go-ini/ini v1.64.0
 	github.com/golang-jwt/jwt/v4 v4.2.0
@@ -14,7 +15,6 @@ require (
 )
 
 require (
-	github.com/gin-contrib/pprof v1.3.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
